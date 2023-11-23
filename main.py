@@ -1,7 +1,7 @@
-def eldecorador(func):
+def eldecorador(lafuncion):
     def wrapper():
-        print(f"Ejecutando {func.__name__}")
-        func()
+        print(f"Ejecutando {lafuncion.__name__}")
+        lafuncion()
         print("Terminado")
     return wrapper
 
