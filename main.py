@@ -1,8 +1,11 @@
+import time
+
 def eldecorador(lafuncion):
     def wrapper():
         print(f"Ejecutando {lafuncion.__name__}")
         lafuncion()
         print("Terminado")
+        time.sleep(2.5)
     return wrapper
 
 @eldecorador
